@@ -1,0 +1,269 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background_profile"
+    tools:context="com.ascentsmartwaves.andnrbyrevamp.activities.ProfileActivity">
+
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:id="@+id/profile_layout_user_profile"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/profile_Img_Layout"
+                android:layout_height="@dimen/two_hundred_and_fifty_dp"
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="@dimen/ten_dp"
+                android:background="#80CDCDCD">
+
+                <EditText
+                    android:hint="&amp; Handle"
+                    android:textColorHint="#FFF"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/material_blue_grey_800"
+                    android:id="@+id/merchant_handle_profile"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_centerHorizontal="true" />
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/profileimg"
+                    android:elevation="@dimen/ten_dp"
+                    android:src="@drawable/andnrby_lazyload"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/hundred_dp"
+                    android:layout_height="@dimen/hundred_dp"/>
+
+                <com.ascentsmartwaves.andnrbyrevamp.custom.CircleImage
+                    android:id="@+id/editprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit1"
+                    android:layout_alignBottom="@+id/user_name"
+                    android:layout_marginRight="@dimen/ten_dp"
+                    android:layout_alignParentRight="true"/>
+
+                <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+                    android:text=""
+                    android:id="@+id/user_name"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/profileimg"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/eighteen_sp"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/profile_Img_Layout"
+                android:id="@+id/profile_details_layout"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="#00CDCDCD"
+                android:layout_margin="@dimen/ten_dp"
+                android:orientation="vertical">
+
+            <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+                android:id="@+id/user_email_id_profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:textSize="10pt"
+                android:paddingLeft="@dimen/five_dp"
+                android:background="#CC9E9E9E"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/five_dp"
+                android:textColor="@color/white"
+                android:text="Email ID"/>
+
+            <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+                android:id="@+id/user_mobile_profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:text="Mobile No"
+                android:paddingLeft="@dimen/five_dp"
+                android:background="#CC9E9E9E"
+                android:gravity="center_vertical"
+                android:textSize="10pt"
+                android:textColor="#FFF"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:layout_below="@+id/user_email_id_profile"/>
+
+            <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+                android:id="@+id/user_DOB_profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:text="DOB"
+                android:paddingLeft="@dimen/five_dp"
+                android:background="#CC9E9E9E"
+                android:gravity="center_vertical"
+                android:textSize="10pt"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:layout_below="@+id/user_email_id_profile"/>
+
+            <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+                android:id="@+id/user_gender_profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:text="Gender"
+                android:paddingLeft="@dimen/five_dp"
+                android:gravity="center_vertical"
+                android:background="#CC9E9E9E"
+                android:textSize="10pt"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:layout_marginBottom="@dimen/five_dp"
+                android:layout_below="@+id/user_DOB_profile"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/edit_profile_layout"
+                android:visibility="invisible"
+                android:layout_below="@+id/profile_Img_Layout"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/ten_dp"
+                android:background="#00CDCDCD"
+                android:layout_height="@dimen/ten_dp"
+                android:layout_width="fill_parent">
+
+
+                <LinearLayout android:layout_width="fill_parent"
+                    android:id="@+id/name_layout"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#00CDCDCD"
+                    android:layout_margin="@dimen/five_dp">
+
+            <com.ascentsmartwaves.andnrbyrevamp.custom.CustomEditText
+                android:id="@+id/user_firstname_activty_register"
+                android:layout_height="wrap_content"
+                android:scrollbars = "vertical"
+                android:height="@dimen/fifty_dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:paddingLeft="@dimen/five_dp"
+                android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+                android:inputType="textPersonName"
+                android:background="@color/white"
+                android:hint="First"
+                android:textColor="@color/material_blue_grey_800"
+                android:textColorHint="@color/material_blue_grey_800"
+                android:layout_gravity="center"
+                android:layout_alignTop="@+id/user_middlename_activty_register" />
+
+            <com.ascentsmartwaves.andnrbyrevamp.custom.CustomEditText
+                android:paddingLeft="5dp"
+                android:id="@+id/user_lastname_activty_register"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:height="@dimen/fifty_dp"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="@dimen/five_dp"
+                android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+                android:inputType="textPersonName"
+                android:textColor="@color/material_blue_grey_800"
+                android:textColorHint="@color/material_blue_grey_800"
+                android:hint="Last"
+                android:layout_toRightOf="@id/user_middlename_activty_register"/>
+
+                </LinearLayout>
+
+        <com.ascentsmartwaves.andnrbyrevamp.custom.CustomEditText
+        android:id="@+id/user_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:inputType="phone"
+        android:layout_margin="@dimen/five_dp"
+        android:digits="0123456789"
+        android:background="#FFFFFF"
+        android:paddingLeft="@dimen/five_dp"
+        android:maxLength="10"
+        android:textColor="@color/material_blue_grey_800"
+        android:textColorHint="@color/material_blue_grey_800"
+        android:layout_below="@+id/name_layout"
+        android:hint="Mobile Number"/>
+
+    <RadioGroup
+        android:id="@+id/user_gender"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/five_dp">
+        <RadioButton
+            android:id="@+id/radioM"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:background="@color/white"
+            android:checked="true"
+            android:layout_weight="1"
+            android:textColor="@color/material_blue_grey_800"
+            android:textColorHint="@color/material_blue_grey_800"
+            android:textSize="@dimen/fourteen_sp"
+            android:text="Male"
+            />
+        <RadioButton
+            android:id="@+id/radioF"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/fifty_dp"
+            android:layout_gravity="right"
+            android:checked="false"
+            android:background="#FFFFFF"
+            android:textColor="@color/material_blue_grey_800"
+            android:textColorHint="@color/material_blue_grey_800"
+            android:layout_weight="1"
+            android:textSize="@dimen/fourteen_sp"
+            android:text="Female"
+            />
+    </RadioGroup>
+
+    <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+        android:id="@+id/user_DOB"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:textColor="@color/material_blue_grey_800"
+        android:textColorHint="@color/material_blue_grey_800"
+        android:textSize="10pt"
+        android:paddingLeft="@dimen/five_dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:layout_margin="@dimen/five_dp"
+        android:layout_below="@+id/user_gender"
+        android:hint="Date of birth"/>
+
+        <com.ascentsmartwaves.andnrbyrevamp.custom.CustomButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_dp"
+            android:text="Update"
+            android:id="@+id/update_profile_btn"
+            android:background="@color/app_color"
+            android:textColor="@color/white"
+            android:onClick="UpdateProfile"
+            android:layout_margin="@dimen/five_dp"
+            android:layout_below="@+id/user_gender_user_profile"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

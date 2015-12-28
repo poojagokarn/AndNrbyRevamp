@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="110dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background_flagdeal"
+    tools:context="com.ascentsmartwaves.andnrbyrevamp.activities.FlagDealActivity">
+
+    <RadioGroup
+        android:id="@+id/flag_reason"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deal not honoured by Merchant"
+        android:id="@+id/reason1"
+        android:layout_marginLeft="@dimen/ten_dp"
+        android:checked="true"
+        />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reason1"
+            android:text="Misleading Deal"
+            android:id="@+id/reason2"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/ten_dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deal Inappropriate for certain audience"
+            android:layout_below="@id/reason2"
+            android:id="@+id/reason3"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginLeft="@dimen/ten_dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foul language"
+            android:layout_below="@id/reason3"
+            android:id="@+id/reason4"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginLeft="@dimen/ten_dp"/>
+
+    </RadioGroup>
+
+    <com.ascentsmartwaves.andnrbyrevamp.custom.CustomButton
+        android:id="@+id/flag_button_favs_fragment_detail_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textColor="#FFF"
+        android:onClick="flagSend"
+        android:background="#D50000"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:layout_marginLeft="@dimen/five_dp"
+        android:layout_marginRight="@dimen/five_dp"
+        android:layout_below="@id/flag_reason"
+        />
+
+</RelativeLayout>
