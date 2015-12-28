@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ascentsmartwaves.andnrbyrevamp" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+    <!--android:theme="@style/AppTheme"-->
+        <!--
+            <activity android:name=".activities.Terms_n_conditions"
+            android:screenOrientation="portrait"/>
+        -->
+
+        <activity
+            android:name=".activities.Terms_n_conditions"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.Bookmarks"
+            android:label="Bookmarks" >
+        </activity>
+        <activity
+            android:name=".activities.Deals_wallet"
+            android:label="Deals_wallet" >
+        </activity>
+        <activity
+            android:name=".activities.FlagDealActivity"
+            android:label="FlagDealActivity" >
+        </activity>
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name=".activities.AndNrByFragmentDetailActivity"
+            android:label="@string/title_activity_and_nr_by_fragment_detail" >
+        </activity>
+    </application>
+
+</manifest>
