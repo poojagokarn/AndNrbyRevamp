@@ -199,8 +199,8 @@
         android:layout_alignParentBottom="true"
         android:elevation="@dimen/five_dp"
         android:onClick="openAnimation"
-        android:background="@drawable/fab"
-        android:layout_margin="@dimen/fifteen_dp"/>
+        android:background="@drawable/fab48"
+        android:layout_margin="@dimen/eighteen_dp"/>
 
     <RelativeLayout
         android:id="@+id/showMenu"

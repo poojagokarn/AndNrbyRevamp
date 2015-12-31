@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:background="@drawable/background_bookmarks1"
-    tools:context="com.ascentsmartwaves.andnrbyrevamp.Bookmarks">
+    tools:context="com.ascentsmartwaves.andnrbyrevamp.activities.BookmarksActivity">
 
 
     <android.support.v7.widget.RecyclerView
@@ -22,7 +22,7 @@
         android:layout_alignParentBottom="true"
         android:elevation="@dimen/five_dp"
         android:onClick="openAnimation"
-        android:background="@drawable/fab"
+        android:background="@drawable/fab48"
         android:layout_margin="@dimen/fifteen_dp"/>
 
 

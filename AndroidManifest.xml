@@ -14,7 +14,7 @@
         -->
 
         <activity
-            android:name=".activities.Terms_n_conditions"
+            android:name=".activities.TermsAndConditionsActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,12 +23,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.Bookmarks"
-            android:label="Bookmarks" >
+            android:name=".activities.BookmarksActivity"
+            android:label="BookmarksActivity" >
         </activity>
         <activity
-            android:name=".activities.Deals_wallet"
-            android:label="Deals_wallet" >
+            android:name=".activities.DealsWalletActivity"
+            android:label="DealsWalletActivity" >
         </activity>
         <activity
             android:name=".activities.FlagDealActivity"

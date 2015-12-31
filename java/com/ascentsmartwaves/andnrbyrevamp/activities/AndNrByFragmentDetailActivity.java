@@ -1,6 +1,7 @@
 package com.ascentsmartwaves.andnrbyrevamp.activities;
 
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,6 +11,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.ascentsmartwaves.andnrbyrevamp.R;
+import com.ascentsmartwaves.andnrbyrevamp.utils.Constants;
 
 public class AndNrByFragmentDetailActivity extends AppCompatActivity {
 
@@ -61,6 +63,14 @@ public class AndNrByFragmentDetailActivity extends AppCompatActivity {
 
     private void setViews()
     {
+        /*if(Constants.andnrbyFragmentDetail.get(0).isLiked())
+        {
+            like.setImageResource(R.drawable.liked);
+        }
+        else
+        {
+            like.setImageResource(R.drawable.like);
+        }*/
     }
 
 

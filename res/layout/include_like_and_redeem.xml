@@ -18,7 +18,7 @@
             android:layout_marginRight="@dimen/twenty_dp"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginBottom="@dimen/ten_dp"
-            android:src="@drawable/call"
+            android:src="@drawable/call64"
             />
         <ImageView
             android:id="@+id/like_image_included"
